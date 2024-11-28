@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,12 +9,52 @@
         android:id="@+id/avgTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Average Temperature: "
         android:textSize="18sp"
-        android:text="Average Temperature: " />
+        android:layout_gravity="center" />
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="1dp" />
+
+    <EditText
+        android:id="@+id/dayInput"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp" />
+        android:hint="Enter Day" />
+
+    <EditText
+        android:id="@+id/maxTempInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Max Temp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/minTempInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Min Temp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/conditionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Condition" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Entry" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear All" />
 </LinearLayout>
